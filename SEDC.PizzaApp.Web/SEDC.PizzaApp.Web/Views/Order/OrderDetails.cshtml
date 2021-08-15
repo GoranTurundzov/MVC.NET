@@ -1,0 +1,45 @@
+﻿@model OrderDetailsViewModel
+@{
+    var orderDetails = ViewData["OrderDetails"] as SEDC.PizzaApp.Web.Models.ViewModels.OrderDetailsViewModel;
+    string orderStatus = "Order is not delivered";
+
+    if (Model.Delivered)
+    {
+        orderStatus = "Order is delivered";
+    }
+
+}
+
+
+<h2>Order Details</h2>
+<ul>
+    <li>@Model.Id</li>
+    <li>@Model.PaymentMethod</li>
+    <li>@Model.PizzaName</li>
+    <li>@(string.Format("{0:c}" , Model.Price))</li>
+    <li>@Model.UserFullName.</li>
+    <li>SEND TO: @Model.Address</li>
+    <li>@orderStatus</li>
+
+</ul>
+@*<partial name="~/Views/Shared/Partial/_OrderDetail.cshtml" for="@Model"/>*@
+
+@Html.Partial("~/Views/Shared/Partial/_OrderDetail.cshtml")
+
+<h3>Datetime now</h3>
+<p>@DateTime.Now</p>
+
+@if (Model.Delivered)
+{
+    <p>Order is Delivered</p>
+}
+else
+{
+    <p> Hold your horses </p>
+}
+<h1> @(Model.Delivered ? "Hello" : "Bye")</h1>
+<p>@orderDetails.UserFullName</p>
+<p>@orderDetails.PizzaName</p>
+<p>@orderDetails.Price</p>
+<p>@orderDetails.PaymentMethod</p>
+

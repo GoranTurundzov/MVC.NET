@@ -1,0 +1,12 @@
+﻿@model List<PizzaDetailsViewModel>
+@{ 
+    Layout = "~/Views/Shared/_SecondLayout.cshtml";
+    
+}
+
+<h1>Pizza List</h1>
+
+@foreach(PizzaDetailsViewModel pizza in Model)
+            {
+                <partial name="~/Views/Shared/Partial/_PizzaMenuView.cshtml" for="@pizza"/>
+             }

@@ -1,0 +1,15 @@
+﻿@model PizzaDetailsViewModel
+
+<div class="row">
+    <div class="col-md-5" style="border: 1px solid rgb(14 14 14 / 0.37); border-radius: 2%;">
+        <a asp-controller="Pizza" asp-action="PizzaDetail" asp-route-id="@Model.getId()" class="nav-link">
+            <h3 class="text-center font-italic"> @Model.Name</h3>
+            <p class="text-right">
+                @Model.Price $
+            </p>
+            <p class="text-center> @Model.Size </p>
+            <p class="text-right"> @(Model.IsOnPromotion ? "This Pizza is on promotion" : "Pizza is regular price") </p>
+            <p class="text-right"> @(Model.HasExtras ? "You can add extras" : "You cannot add extras")</p>
+        </a>
+    </div>
+</div>

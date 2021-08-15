@@ -1,0 +1,21 @@
+﻿@model PizzaDetailsViewModel
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1> @Model.Name </h1>
+            <h4> @Model.Price $</h4>
+            <p> @Model.Size</p>
+            @if (Model.IsOnPromotion)
+            {
+                <h3>ON  PROMOTION</h3>
+            }
+            @if (Model.HasExtras)
+            {
+                <h1>Extra toppings are free!!</h1>
+            }
+        </div>
+    </div>
+</div>
