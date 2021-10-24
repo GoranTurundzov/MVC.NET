@@ -1,0 +1,50 @@
+﻿@model OrderViewModel
+
+<div class="row">
+    <div class="col-md-5">
+        <form method="post" asp-controller="Order" asp-action="EditOrder">
+            <input type="hidden" asp-for="@Model.Id" />
+            <input asp-for="UserId" type="hidden" />
+            <div class="form-group">
+                <label asp-for="PizzaStore" class="control-label">Pizza Store:</label>
+                <input class="form-control" asp-for="PizzaStore" />
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.PizzaName)
+                @Html.TextBoxFor(x => x.PizzaName, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label asp-for="Delivered" class="control-label">Delivery Staus:</label>
+                <input asp-for="Delivered" type="checkbox" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label">Price:</label>
+                <input asp-for="Price" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymetMethod" class="control-label">Payment Method:</label>
+                <select class="form-control" asp-for="PaymetMethod" asp-items="Html.GetEnumSelectList<PaymentMethod>()"></select>
+
+            </div>
+
+            @*@Html.DropDownListFor(x => x.Id == Model.Id , Html.GetEnumSelectList<PaymentMethod>(), new {@class =" form-control"})*@
+
+            <div class="form-group">
+                <label asp-for="UserId">User:</label>
+                @*<select asp-for="UserId" class="form-control" asp-items="@(new SelectList(ViewBag.Users, "Id" , "FullName"))"></select>*@
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.Users1"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address">Address</label>
+                <input asp-for="Address" type="text" class="form-control" />
+
+
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

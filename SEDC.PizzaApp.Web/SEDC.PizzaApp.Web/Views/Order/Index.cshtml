@@ -31,16 +31,13 @@
     <div class="col-md-6">
         @foreach (var item in Model)
         {
-            <a class="nav-link" asp-controller="Order" asp-action="OrderDetails" asp-route-id="@item.Id">
-                <h4>Order Details:</h4>
-                <p>Pizza Name: @item.PizzaName</p>
-                <p>User: @item.UserFullName.</p>
-                <p>Price: @item.Price</p>
-                <p>Payment : @item.PaymentMethod</p>
-            </a>
+
+            <partial name="~/Views/Shared/Partial/_OrderDetail.cshtml" for="@item" />
+            <a class="nav-link" asp-controller="Order" asp-action="OrderDetails" asp-route-id="@item.Id" > Details </a>
+
         }
 
-        @for (var i = 0; i < Model.Count; i++)
+        @*@for (var i = 0; i < Model.Count; i++)
         {
             <a class="nav-link" asp-controller="Order" asp-action="OrderDetails" asp-route-id="@Model[i].Id" onclick="Indexot=@Model[i].Id">
                 <h3>Order Number @(i+1)  </h3>
@@ -49,7 +46,7 @@
                 <p>Payment @Model[i].PaymentMethod</p>
                 <p>Delivered: @(Model[i].Delivered ? "Delivered" : "Not Delivered" )</p>
             </a>
-        }
+        }*@
     </div>
 </div>
 </div>

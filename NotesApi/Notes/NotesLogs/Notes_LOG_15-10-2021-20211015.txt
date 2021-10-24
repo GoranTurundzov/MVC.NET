@@ -1,0 +1,160 @@
+
+17:46:50 [Information] () User profile is available. Using '"C:\Users\goran\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+17:46:52 [Information] () Application started. Press Ctrl+C to shut down.
+
+17:46:52 [Information] () Hosting environment: "Development"
+
+17:46:52 [Information] () Content root path: "C:\Seavus\ASP.NET\NotesApi\Notes\Notes"
+
+17:46:52 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/User/authenticate  
+
+17:46:52 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/index.html  
+
+17:46:52 [Information] () Executing endpoint '"405 HTTP Method Not Supported"'
+
+17:46:52 [Information] () Executed endpoint '"405 HTTP Method Not Supported"'
+
+17:46:52 [Information] () Request finished in 495.3103ms 0 
+
+17:46:53 [Information] () Request finished in 715.4853ms 404 
+
+17:47:59 [Information] () User profile is available. Using '"C:\Users\goran\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+17:48:01 [Information] () Application started. Press Ctrl+C to shut down.
+
+17:48:01 [Information] () Hosting environment: "Development"
+
+17:48:01 [Information] () Content root path: "C:\Seavus\ASP.NET\NotesApi\Notes\Notes"
+
+17:48:01 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/User/authenticate  
+
+17:48:02 [Information] () Executing endpoint '"405 HTTP Method Not Supported"'
+
+17:48:02 [Information] () Executed endpoint '"405 HTTP Method Not Supported"'
+
+17:48:02 [Information] () Request finished in 581.072ms 405 
+
+17:48:14 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/index.html  
+
+17:48:14 [Information] () Request finished in 216.9197ms 200 text/html;charset=utf-8
+
+17:48:14 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/swagger-ui.css  
+
+17:48:14 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/swagger-ui-standalone-preset.js  
+
+17:48:14 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/swagger-ui-bundle.js  
+
+17:48:15 [Information] () Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+
+17:48:15 [Information] () Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+
+17:48:15 [Information] () Request finished in 271.7326ms 200 text/css
+
+17:48:15 [Information] () Request finished in 270.0017ms 200 application/javascript
+
+17:48:15 [Information] () Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+
+17:48:15 [Information] () Request finished in 245.4183ms 200 application/javascript
+
+17:48:16 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/v1/swagger.json  
+
+17:48:16 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/favicon-32x32.png  
+
+17:48:16 [Information] () Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+17:48:16 [Information] () Request finished in 25.1278ms 200 image/png
+
+17:48:16 [Information] () Request finished in 501.3373ms 200 application/json;charset=utf-8
+
+17:48:52 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+17:48:52 [Information] () Authorization failed.
+
+17:48:52 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+17:48:52 [Information] () Request finished in 101.3145ms 401 
+
+17:48:59 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+17:48:59 [Information] () Authorization failed.
+
+17:48:59 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+17:48:59 [Information] () Request finished in 31.5606ms 401 
+
+17:58:29 [Information] () User profile is available. Using '"C:\Users\goran\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+17:58:30 [Information] () Application started. Press Ctrl+C to shut down.
+
+17:58:30 [Information] () Hosting environment: "Development"
+
+17:58:30 [Information] () Content root path: "C:\Seavus\ASP.NET\NotesApi\Notes\Notes"
+
+17:58:30 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/User/authenticate  
+
+17:58:31 [Information] () Executing endpoint '"405 HTTP Method Not Supported"'
+
+17:58:31 [Information] () Executed endpoint '"405 HTTP Method Not Supported"'
+
+17:58:31 [Information] () Request finished in 592.5197ms 405 
+
+17:58:42 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/index.html  
+
+17:58:42 [Information] () Request finished in 121.7026ms 200 text/html;charset=utf-8
+
+17:58:43 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/swagger/v1/swagger.json  
+
+17:58:43 [Information] () Request finished in 461.6215ms 200 application/json;charset=utf-8
+
+17:59:34 [Information] () Request starting HTTP/2.0 POST https://localhost:44398/api/User/register application/json 138
+
+17:59:34 [Information] () Executing endpoint '"SEDC.NotesApp.Api.Controllers.UserController.Register (SEDC.NotesApp.Api)"'
+
+17:59:34 [Information] () Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(SEDC.NotesApp.Models.RegisterModel)" on controller "SEDC.NotesApp.Api.Controllers.UserController" ("SEDC.NotesApp.Api").
+
+17:59:38 [Information] () Entity Framework Core "3.1.0" initialized '"NoteDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+
+17:59:42 [Information] () Executed DbCommand ("749"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Firstname], [LastName], [Password], [Username])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+
+17:59:43 [Information] () Executing ObjectResult, writing value of type '"System.String"'.
+
+17:59:43 [Information] () Executed action "SEDC.NotesApp.Api.Controllers.UserController.Register (SEDC.NotesApp.Api)" in 8344.0144ms
+
+17:59:43 [Information] () Executed endpoint '"SEDC.NotesApp.Api.Controllers.UserController.Register (SEDC.NotesApp.Api)"'
+
+17:59:43 [Information] () Request finished in 8594.1467ms 200 text/plain; charset=utf-8
+
+18:00:20 [Information] () Request starting HTTP/2.0 POST https://localhost:44398/api/User/authenticate application/json 54
+
+18:00:20 [Information] () Executing endpoint '"SEDC.NotesApp.Api.Controllers.UserController.Authenticate (SEDC.NotesApp.Api)"'
+
+18:00:20 [Information] () Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(SEDC.NotesApp.Models.LoginModel)" on controller "SEDC.NotesApp.Api.Controllers.UserController" ("SEDC.NotesApp.Api").
+
+18:00:20 [Information] () Entity Framework Core "3.1.0" initialized '"NoteDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+
+18:00:20 [Information] () Executed DbCommand ("251"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Firstname], [u].[LastName], [u].[Password], [u].[Username]
+FROM [Users] AS [u]"
+
+18:00:21 [Information] () Executing ObjectResult, writing value of type '"SEDC.NotesApp.Models.UserModel"'.
+
+18:00:21 [Information] () Executed action "SEDC.NotesApp.Api.Controllers.UserController.Authenticate (SEDC.NotesApp.Api)" in 1795.939ms
+
+18:00:21 [Information] () Executed endpoint '"SEDC.NotesApp.Api.Controllers.UserController.Authenticate (SEDC.NotesApp.Api)"'
+
+18:00:21 [Information] () Request finished in 1860.8542ms 200 application/json; charset=utf-8
+
+18:00:59 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+18:00:59 [Information] () Authorization failed.
+
+18:00:59 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:00:59 [Information] () Request finished in 85.4398ms 401 

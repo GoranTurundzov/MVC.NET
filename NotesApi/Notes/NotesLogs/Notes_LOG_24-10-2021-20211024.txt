@@ -1,0 +1,104 @@
+
+18:13:54 [Information] () User profile is available. Using '"C:\Users\goran\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+18:13:55 [Information] () Application started. Press Ctrl+C to shut down.
+
+18:13:55 [Information] () Hosting environment: "Development"
+
+18:13:55 [Information] () Content root path: "C:\Seavus\ASP.NET\NotesApi\Notes\Notes"
+
+18:13:55 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/User/authenticate  
+
+18:13:56 [Information] () Executing endpoint '"405 HTTP Method Not Supported"'
+
+18:13:56 [Information] () Executed endpoint '"405 HTTP Method Not Supported"'
+
+18:13:56 [Information] () Request finished in 508.6108ms 405 
+
+18:14:05 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+18:14:06 [Information] () Authorization failed.
+
+18:14:06 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:14:06 [Information] () Request finished in 188.4555ms 401 
+
+18:14:09 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+18:14:09 [Information] () Authorization failed.
+
+18:14:09 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:14:09 [Information] () Request finished in 17.4402ms 401 
+
+18:14:10 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+18:14:10 [Information] () Authorization failed.
+
+18:14:10 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:14:10 [Information] () Request finished in 12.3139ms 401 
+
+18:15:04 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/  
+
+18:15:04 [Information] () Request finished in 3.1853ms 404 
+
+18:15:15 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/  
+
+18:15:15 [Information] () Request finished in 7.3077ms 404 
+
+18:15:31 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/1  
+
+18:15:31 [Information] () Authorization failed.
+
+18:15:31 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:15:31 [Information] () Request finished in 33.4229ms 401 
+
+18:15:34 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/getAllNotes/2  
+
+18:15:34 [Information] () Authorization failed.
+
+18:15:34 [Information] () AuthenticationScheme: "Bearer" was challenged.
+
+18:15:34 [Information] () Request finished in 13.0247ms 401 
+
+18:16:35 [Information] () User profile is available. Using '"C:\Users\goran\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+18:16:36 [Information] () Application started. Press Ctrl+C to shut down.
+
+18:16:36 [Information] () Hosting environment: "Development"
+
+18:16:36 [Information] () Content root path: "C:\Seavus\ASP.NET\NotesApi\Notes\Notes"
+
+18:16:36 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/User/authenticate  
+
+18:16:37 [Information] () Executing endpoint '"405 HTTP Method Not Supported"'
+
+18:16:37 [Information] () Executed endpoint '"405 HTTP Method Not Supported"'
+
+18:16:37 [Information] () Request finished in 346.8329ms 405 
+
+18:16:49 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/api/Note/GetAllNotes/1  
+
+18:16:49 [Information] () Executing endpoint '"NotesApp.Api.Controllers.NoteController.GetAllNotes (NotesApp.Api)"'
+
+18:16:50 [Information] () Route matched with "{action = \"GetAllNotes\", controller = \"Note\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[NotesApp.Models.NoteModel]] GetAllNotes(Int32)" on controller "NotesApp.Api.Controllers.NoteController" ("NotesApp.Api").
+
+18:16:51 [Information] () Entity Framework Core "3.1.0" initialized '"NoteDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+
+18:16:54 [Information] () Executed DbCommand ("555"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [n].[Id], [n].[Color], [n].[DateCreated], [n].[Tag], [n].[Text], [n].[UserId]
+FROM [Notes] AS [n]"
+
+18:16:54 [Information] () Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[NotesApp.Models.NoteModel, NotesApp.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+
+18:16:54 [Information] () Executed action "NotesApp.Api.Controllers.NoteController.GetAllNotes (NotesApp.Api)" in 4560.1127ms
+
+18:16:54 [Information] () Executed endpoint '"NotesApp.Api.Controllers.NoteController.GetAllNotes (NotesApp.Api)"'
+
+18:16:54 [Information] () Request finished in 4737.3505ms 200 application/json; charset=utf-8
+
+18:16:55 [Information] () Request starting HTTP/2.0 GET https://localhost:44398/favicon.ico  
+
+18:16:55 [Information] () Request finished in 9.8594ms 404 

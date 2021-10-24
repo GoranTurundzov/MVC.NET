@@ -18,7 +18,8 @@ namespace SEDC.PizzaApp.Web.Models.Mappers
                 IsOnPromotion = pizza.IsOnPromotion,
                 Id = pizza.Id,
                 Size = pizza.Size,
-                HasExtras = pizza.HasExtras
+                HasExtras = pizza.HasExtras,
+                
             };
             return pizzaView;
         }

@@ -1,0 +1,6 @@
+﻿@Model OrderDetailsViewModel
+
+<partial name="~/Views/Shared/Partial/_OrderDetail.cshtml" for="@Model" />
+
+<a class="nav-link" asp-controller="Order" asp-action="OrderDetails" asp-route-id="@Model.Id"> Back </a>
+<a asp-action="DeleteOrderPost" asp-controller="Order" asp-route-id="@Model.Id" onclick="clicker(@Model.PizzaName)">Delete Order</a>

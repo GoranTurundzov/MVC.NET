@@ -12,21 +12,26 @@
 
 
 <h2>Order Details</h2>
+<h3 class="font-weight-bold font-italic">@Model.PizzaName</h3>
 <ul>
-    <li>@Model.Id</li>
-    <li>@Model.PaymentMethod</li>
-    <li>@Model.PizzaName</li>
+
+    <li>Order Number : @Model.Id</li>
+    <li>Method Of Paymet : @Model.PaymentMethod</li>
     <li>@(string.Format("{0:c}" , Model.Price))</li>
     <li>@Model.UserFullName.</li>
     <li>SEND TO: @Model.Address</li>
     <li>@orderStatus</li>
 
+    @Html.ActionLink("Home", "Index", "Home")
+    @Html.ActionLink("Delete Order", "DeleteOrder", "Order", new { id = Model.Id })
+    <a class="nav-link" asp-controller="Order" asp-action="EditOrder" asp-route-id="@Model.Id"> Edit Order </a>
+
 </ul>
 @*<partial name="~/Views/Shared/Partial/_OrderDetail.cshtml" for="@Model"/>*@
 
-@Html.Partial("~/Views/Shared/Partial/_OrderDetail.cshtml")
+@*@Html.Partial("~/Views/Shared/Partial/_OrderDetail.cshtml")*@
 
-<h3>Datetime now</h3>
+@*<h3>Datetime now</h3>
 <p>@DateTime.Now</p>
 
 @if (Model.Delivered)
@@ -41,5 +46,5 @@ else
 <p>@orderDetails.UserFullName</p>
 <p>@orderDetails.PizzaName</p>
 <p>@orderDetails.Price</p>
-<p>@orderDetails.PaymentMethod</p>
+<p>@orderDetails.PaymentMethod</p>*@
 

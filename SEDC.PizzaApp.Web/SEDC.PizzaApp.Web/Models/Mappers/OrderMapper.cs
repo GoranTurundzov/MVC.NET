@@ -20,8 +20,24 @@ namespace SEDC.PizzaApp.Web.Models.Mappers
                 UserFullName = $"{order.User.FirstName} {order.User.LastName}",
                 Price = order.Pizza.HasExtras ? order.Pizza.Price + 10 : order.Pizza.Price,
                 Delivered = order.Delivered,
-                Address = order.User.Address
+                Address = order.User.Address,
+                PizzaStore = order.PizzaStore
             };
+        }
+
+        public static OrderViewModel OrderToOrderViewModel(Order order)
+        {
+            return new OrderViewModel() {
+                Id = order.Id,
+                PaymetMethod = order.PaymentMethond,
+                PizzaName = order.Pizza.Name,
+                PizzaStore = order.PizzaStore,
+                Price = order.Price,
+                Address = order.User.Address,
+                Delivered = order.Delivered,
+                UserId = 1
+            };
+
         }
     }
 }

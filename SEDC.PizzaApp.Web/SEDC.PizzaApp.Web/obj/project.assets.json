@@ -662,11 +662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Seavus\\ASP.NET\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
+      "projectUniqueName": "C:\\Seavus\\DOMASNO_MVC\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
       "projectName": "SEDC.PizzaApp.Web",
-      "projectPath": "C:\\Seavus\\ASP.NET\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
+      "projectPath": "C:\\Seavus\\DOMASNO_MVC\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web.csproj",
       "packagesPath": "C:\\Users\\goran\\.nuget\\packages\\",
-      "outputPath": "C:\\Seavus\\ASP.NET\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\obj\\",
+      "outputPath": "C:\\Seavus\\DOMASNO_MVC\\SEDC.PizzaApp.Web\\SEDC.PizzaApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

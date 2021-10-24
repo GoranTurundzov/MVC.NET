@@ -26,6 +26,10 @@ namespace SEDC.PizzaApp.Web.Controllers
         public IActionResult PizzaDetail(int id)
         {
             Pizza pizza = StaticDB.Pizzas.FirstOrDefault(x => x.Id == id);
+            if (pizza == null)
+            {
+                return View("_ResourceNotFound");
+            }
             PizzaDetailsViewModel pizzaView = PizzaMapper.PizzaToPizzaDEtailsViewModel(pizza);
             return View(pizzaView);
         }

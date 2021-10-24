@@ -1,13 +1,16 @@
 ﻿
 
 
-<h2>Order Details Partial</h2>
-<ul>
-    <li>@Model.Id</li>
-    <li>@Model.PaymentMethod</li>
-    <li>@Model.PizzaName</li>
-    <li>@(string.Format("{0:c}" , Model.Price))</li>
-    <li>@Model.UserFullName.</li>
+
+<ul class="list-group-item list-unstyled">
+    <li class="font-weight-bold font-italic">@Model.PizzaName</li>
+    <li>Order number: @Model.Id</li>
+    <li>Paymet @Model.PaymentMethod</li>
+    <li>Price: @(string.Format("{0:c}" , Model.Price))</li>
+    <li>Ordered by: @Model.UserFullName.</li>
+    <li>Sent To: @Model.Address</li>
     
+
+    @*@Html.ActionLink("Details" , "OrderDetails" , "Order" , new {id = Model.Id})*@
 
 </ul> 

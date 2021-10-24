@@ -19,5 +19,7 @@ namespace SEDC.PizzaApp.Web.Models.Domain
         public PaymentMethod PaymentMethond { get; set; }
 
         public bool Delivered { get; set; }
+
+        public string PizzaStore { get; set; }
     }
 }

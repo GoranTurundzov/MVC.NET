@@ -37,7 +37,8 @@ namespace SEDC.PizzaApp.Web
                 IsOnPromotion = false,
                   Price = 8,
                   Size = PizzaSize.Fammily,
-                   HasExtras = false
+                   HasExtras = false,
+                   
             } ,
         };
 
@@ -77,7 +78,8 @@ namespace SEDC.PizzaApp.Web
                 User = Users.First(),
                 Pizza = Pizzas.First(),
                 Price = Pizzas.First().Price,
-                Delivered = false
+                Delivered = false,
+                PizzaStore = "Jakomo"
             },
               new Order()
             {
@@ -86,7 +88,8 @@ namespace SEDC.PizzaApp.Web
                 User = Users.FirstOrDefault(x => x.Id == 2),
                 Pizza = Pizzas.FirstOrDefault(x => x.Id == 2),
                 Price = Pizzas.FirstOrDefault(x => x.Id == 2).Price,
-                 Delivered = false
+                 Delivered = false,
+                 PizzaStore = "Dominos"
             },
                 new Order()
             {
@@ -95,7 +98,8 @@ namespace SEDC.PizzaApp.Web
                 User = Users.Last(),
                 Pizza = Pizzas.Last(),
                 Price = Pizzas.Last().Price,
-                 Delivered = true
+                 Delivered = true,
+                 PizzaStore = " Mama Mia"
             },
         };
     }

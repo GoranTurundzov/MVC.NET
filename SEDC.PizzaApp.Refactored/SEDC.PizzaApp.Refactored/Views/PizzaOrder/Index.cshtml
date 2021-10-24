@@ -1,0 +1,13 @@
+﻿@model List<SEDC.PizzaApp.Domain.Models.Pizza>
+
+<div class="row">
+    <div class="col-md-6  justify-content-md-center">
+        @foreach( var item in Model)
+            {
+                <h3> @item.Name </h3>
+                <p> Price: @item.Price</p>
+                <p> Promotion: @item.IsOnPromotion</p>
+                <p> Size: @item.PizzaSize</p>
+            }
+    </div>
+</div>
